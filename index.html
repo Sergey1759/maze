@@ -1,0 +1,499 @@
+<head>
+    <style>
+
+        span{
+            display: inline-block;
+            min-width: 5%;
+            min-height: 20px;
+            text-align: center;
+        }
+        .wall{
+            background-color: black;
+        }
+        div {
+            min-height: 20px;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+        }
+        .enter{
+            text-align: center;
+            background-color: red;
+        }
+        .exit{
+            text-align: center;
+            background-color: green;
+        }
+        #finish {
+            border-bottom: 3px dashed black;
+            border-left: 3px dashed black;
+            border-right: 3px dashed black;
+        }
+        #start {
+            border-top: 3px dashed black;
+            border-left: 3px dashed black;
+            border-right: 3px dashed black;
+        }
+        #top {
+            border-top: 3px solid black;
+        }
+        #bottom {
+            border-bottom: 3px solid black;
+        }
+
+    </style>
+</head>
+<div id="start">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="enter">START</span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div id="top" class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+
+
+<div id="bottom"  class="row">
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span></span>
+    <span></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+    <span class="wall"></span>
+</div>
+<div id="finish">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>        
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="exit">FINISH</span>
+      
+</div>
