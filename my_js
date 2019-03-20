@@ -19,13 +19,17 @@ function find(row,value,obj){
       obj.y = row;
     }
   }
-  console.log('obj.x =' + obj.x);
-  console.log('obj.y =' + obj.y);
+  //console.log('obj.x =' + obj.x);
+  //console.log('obj.y =' + obj.y);
 }
 
 find(row_start,'enter',start);
 find(row_finish,'exit',finish);
 
 for(var i = row_start+1; i < row_finish; i++){
-  
+  for(var j = 0; j < div[i].getElementsByTagName('span').length; i++){
+    if(div[i].getElementsByTagName('span')[j].className == "wall"){
+      div[i].getElementsByTagName('span')[j].style.background = "red";
+    }
+  }
 }
